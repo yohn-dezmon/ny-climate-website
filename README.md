@@ -4,7 +4,7 @@
 
 # Build
 
-- Vite
+- Vite (`npm create vite@latest`)
 - NodeJS (version: v22.14.0)
 
 # Frontend Framework
