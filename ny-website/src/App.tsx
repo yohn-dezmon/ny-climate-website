@@ -1,8 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import Title from './components/Title';
+import TitleBar from './components/TitleBar';
 
 function App() {
-  return (<h1> Hello, world.</h1>)
+  return (
+  <div className="app">
+    <Title className="mb-4"/>
+    <TitleBar />
+    </div>
+  )
 }
 
 export default App

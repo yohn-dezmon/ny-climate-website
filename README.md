@@ -11,3 +11,7 @@
 
 - React
 - TypeScript
+
+# Styling
+
+tailwind (`npm install tailwindcss @tailwindcss/vite`)
