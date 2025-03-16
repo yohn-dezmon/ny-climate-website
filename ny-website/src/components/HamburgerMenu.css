@@ -1,0 +1,15 @@
+/* Keyframes for infinite spinning */
+@keyframes spinInfinite {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* Apply spin on hover */
+.hamburger-icon:hover {
+    animation: spinInfinite 0.05s linear infinite;
+  }
