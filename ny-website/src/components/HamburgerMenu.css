@@ -11,5 +11,5 @@
 
 /* Apply spin on hover */
 .hamburger-icon:hover {
-    animation: spinInfinite 0.05s linear infinite;
+    animation: spinInfinite 1s linear infinite;
   }
