@@ -14,6 +14,24 @@
 - define a keyframe animation
 - use a `hover` selector
 
+```css
+@keyframes spinInfinite {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+/* Apply spin on hover */
+.hamburger-icon:hover {
+    animation: spinInfinite 1s linear infinite;
+  }
+
+```
+
 # Diagramming tools
 
 - draw.io
@@ -48,6 +66,10 @@
 - position: absolute;
 - position an element outside the normal flow of the document, causing neighboring elements to act as if the element doesn't exist
 
+`relative`:
+- in contrast to absolute, this keeps a div in its "normal flow"
+
+
 `top-full`:
 
 - `top: 100%`
@@ -56,6 +78,11 @@
 - in this case, directly below the hamburger icon
 
 `left-0`:
+
 - `left: 0;`
 - positions an element at the very left (0px) of its nearest positioned ancestor
+-
+
+`mb-4`:
+- margin bottom 
 - 
