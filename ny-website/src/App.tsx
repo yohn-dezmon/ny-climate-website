@@ -1,12 +1,27 @@
-import Title from './components/Title';
-import TitleBar from './components/TitleBar';
+import HomePage from './pages/HomePage';
+import EnergyAndEmissionsPage from './pages/EnergyAndEmissionsPage';
+import NotFoundPage from './pages/NotFoundPage';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from "./components/Layout";
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    errorElement: <NotFoundPage />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "energy", element: <EnergyAndEmissionsPage />}
+    ]
+  },
+]);
 
 function App() {
   return (
   <div className="app">
-    <Title className="mb-4"/>
-    <TitleBar />
-    </div>
+    <RouterProvider router={router} />
+  </div>
   )
 }
 
