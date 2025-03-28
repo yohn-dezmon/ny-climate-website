@@ -37,7 +37,8 @@ function HamburgerMenu() {
 
             {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute top-full left-0 w-28 shadow-lg border rounded-lg z-50 bg-white">
+                <div className="absolute top-full left-0 w-28 shadow-lg border rounded-lg z-50 bg-white" 
+                onClick={() => setIsOpen(!isOpen)}>
                     <ul className="py-2">
                         {renderedListItems}
                     </ul>
