@@ -1,3 +1,4 @@
+import ClimateActionPage from './pages/ClimateActionPage';
 import HomePage from './pages/HomePage';
 import EnergyAndEmissionsPage from './pages/EnergyAndEmissionsPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "energy", element: <EnergyAndEmissionsPage />}
+      { path: "energy", element: <EnergyAndEmissionsPage />},
+      { path: "action", element: <ClimateActionPage />}
     ]
   },
 ]);
