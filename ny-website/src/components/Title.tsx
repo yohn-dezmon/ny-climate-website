@@ -2,7 +2,7 @@
 function Title() {
 
     return(
-        <h1 className="text-4xl font-bold text-center">NY Climate Website</h1>
+        <h1 className="text-lg font-bold text-center">NY Climate Website</h1>
     )
 
 }

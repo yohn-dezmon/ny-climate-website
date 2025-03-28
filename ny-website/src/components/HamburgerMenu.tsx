@@ -7,7 +7,7 @@ import './HamburgerMenu.css';
 function HamburgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const listItemStyle = "px-4 py-2 hover:bg-gray-100 cursor-pointer";
+    const listItemStyle = "text-[10px] px-4 py-2 hover:bg-gray-100 cursor-pointer";
 
     const listItems = [
         {'title': 'climate impacts', 'path': 'impacts'},
@@ -31,13 +31,13 @@ function HamburgerMenu() {
     return (
         <div className="relative">
             <div className="cursor-pointer p-2 rounded group" onClick={() => setIsOpen(!isOpen)}>
-                <GiHamburger size={24} className="hamburger-icon"/>
+                <GiHamburger size={19} className="hamburger-icon"/>
             </div>
 
 
             {/* Dropdown Menu */}
             {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 shadow-lg border rounded-lg z-50 bg-white">
+                <div className="absolute top-full left-0 w-28 shadow-lg border rounded-lg z-50 bg-white">
                     <ul className="py-2">
                         {renderedListItems}
                     </ul>
