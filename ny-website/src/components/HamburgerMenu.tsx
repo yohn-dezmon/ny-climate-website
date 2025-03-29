@@ -10,9 +10,10 @@ function HamburgerMenu() {
     const listItemStyle = "text-[10px] px-4 py-2 hover:bg-gray-100 cursor-pointer";
 
     const listItems = [
+        {'title': 'energy & emissions', 'path': 'energy'},
+        {'title': 'legislation', 'path': 'legislation'},
         {'title': 'climate impacts', 'path': 'impacts'},
         {'title': 'climate action', 'path': 'action'},
-        {'title': 'energy & emissions', 'path': 'energy'},
         {'title': 'policy', 'path': 'policy'},
         {'title': 'news', 'path': 'news'},
         {'title': 'data', 'path': 'data'}
@@ -21,7 +22,7 @@ function HamburgerMenu() {
     const renderedListItems = listItems.map((item) => {
         return(
             <li key={item.path} className={listItemStyle}>
-                <Link to={`/${item.path}`}>
+                <Link to={`/${item.path}`} onClick={() => { setIsOpen(false)}}>
                     {item.title}
                 </Link>
             </li>
@@ -38,7 +39,7 @@ function HamburgerMenu() {
             {/* Dropdown Menu */}
             {isOpen && (
                 <div className="absolute top-full left-0 w-28 shadow-lg border rounded-lg z-50 bg-white" 
-                onClick={() => setIsOpen(!isOpen)}>
+                onClick={(e) => e.stopPropagation()}>
                     <ul className="py-2">
                         {renderedListItems}
                     </ul>

@@ -13,7 +13,6 @@ function Button({
   rounded,
   ...rest
 }) {
-  console.log(rest);
   const classes = twMerge(
     className(rest.className, "flex items-center px-3 py-1.5 border hover:bg-green-200 text-[10px]", {
       "border-blue-500 bg-blue-500 text-white": primary,
