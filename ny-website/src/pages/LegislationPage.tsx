@@ -59,6 +59,27 @@ function LegislationPage() {
                 </ul>
             </div> 
 
+            <h3 className="">Climate Change Superfund Act (2024)</h3>
+            <div className={textBlockStyle}>     
+                <ul>
+                    <li>
+                        Law Holds Fossil Fuel Companies Responsible for Impact of Pollution on New York Communities.
+                    </li>
+                </ul>
+            </div> 
+
+            <h3 className="">Build Public Renewables Act (2023)</h3>
+            <div className={textBlockStyle}>     
+                <ul>
+                    <li>
+                    (A00279/S04134)
+                    </li>
+                    <li>
+                    New York Power Authority (NYPA) authorized to...
+                    </li>
+                </ul>
+            </div> 
+
         </div>
        
     ) 
