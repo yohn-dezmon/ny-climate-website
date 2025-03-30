@@ -6,3 +6,5 @@
 # Fix
 
 - set the `onClick` to be on the Link itself
+
+--> 3/30 This still occurs!... not sure why. I think it has to do with Link interacting with the state process.

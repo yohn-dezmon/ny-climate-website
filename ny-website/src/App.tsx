@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "energy", element: <EnergyAndEmissionsPage />},
       { path: "action", element: <ClimateActionPage />},
-      { path: "legislation", element: <LegislationPage />}
+      { path: "legislation", element: <LegislationPage />},
     ]
   },
 ]);
