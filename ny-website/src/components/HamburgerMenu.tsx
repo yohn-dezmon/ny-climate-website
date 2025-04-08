@@ -20,7 +20,6 @@ function HamburgerMenu() {
     ]
 
     const handleClick = (path) => {
-        console.log("got here!");
         setIsOpen(false);
         navigate(path)
     }
