@@ -1,9 +1,5 @@
 function Table ({columnNames, rows}) {
-    /*
-    let criticismsHeaderStyle = "ml-10";
-    let criticismTextStyle = "text-[8px] text-red-500"
-    let responseTextStyle = "text-[8px] font-bold text-blue-500"
-    */
+    
     let textBlockStyle = "p-2 border border-black-300";
     const columnHeaders = columnNames.map((name: string) => {
         return <th scope="col" className={"border border-black-300"}>{name}</th>
