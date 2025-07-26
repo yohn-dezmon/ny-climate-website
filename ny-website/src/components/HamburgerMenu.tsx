@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GiHamburger } from "react-icons/gi";
-import { useNavigate  } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './HamburgerMenu.css';
 
 
 function HamburgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const listItemStyle = "text-[10px] px-4 py-2 hover:bg-gray-100 cursor-pointer";
 
@@ -19,10 +20,15 @@ function HamburgerMenu() {
         // {'title': 'data', 'path': 'data'}
     ]
 
-    const handleClick = (path) => {
+    const handleClick = (path: string) => {
         setIsOpen(false);
-        navigate(path)
-    }
+        navigate(path);
+    };
+
+    // Close menu on route change
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location.pathname]);
     
     const renderedListItems = listItems.map((item) => {
         return(

@@ -1,5 +1,5 @@
 function EnergyAndEmissionsPage() {
-    const listItemStyle = "text-[10px] hover:underline text-blue-600 marker:text-black";
+    const listItemStyle = "hover:underline text-blue-600 marker:text-black";
 
     const listItems = [
         {'url': 'https://www.nyrenews.org/', 'text': 'NY Renews'},
@@ -22,7 +22,7 @@ function EnergyAndEmissionsPage() {
     return(
         <div className="relative flex flex-col relative ml-4"> 
             <h1 className="text-center">Climate Action</h1>
-            <div className="ml-4 text-[10px]">     
+            <div className="ml-4">     
                 <ul role="list" className="list-disc">
                     {renderedListItems}
                 </ul>
